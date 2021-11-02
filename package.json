@@ -8,9 +8,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gsap": "^3.8.0",
     "next": "12.0.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "tailwindcss": "^2.2.19",
+    "xtendui": "^1.0.0-beta.47"
   },
   "devDependencies": {
     "eslint": "7.32.0",

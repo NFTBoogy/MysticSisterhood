@@ -28,41 +28,59 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+  line-height: 1.45;
+  font-size: 3rem;
   text-align: center;
+  width: 80%;
+  background: -webkit-linear-gradient(#a3a3a3, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 0.5rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: left;
+  width: 75%;
+  color: #fff;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.noteTitle {
+  text-align: left !important;
+  font-family: "Satisfy", cursive;
+  background: -webkit-linear-gradient(#a3a3a3, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  width: 75%;
+}
+
+.leftTitle {
+  width: 75%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.lisaNote {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: left;
+  width: 75%;
+  color: #fff;
+  font-family: "Satisfy", cursive;
 }
 
 .grid {
@@ -108,9 +126,61 @@
   margin-left: 0.5rem;
 }
 
+.hr {
+  margin: 2rem auto;
+  width: 40%;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
