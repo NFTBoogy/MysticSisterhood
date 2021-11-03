@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Fader from "../components/Fader";
+import FadeIn from "react-fade-in";
 
 export default function Home() {
   return (
@@ -13,7 +15,11 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Caveat&family=Satisfy&display=swap"
           rel="stylesheet"
@@ -25,26 +31,31 @@ export default function Home() {
           A collection of 7,777 mystically inclined women, all welcoming you
           home.
         </h3>
-        <h2 className={styles.title}>
-          Join us during the New Moon: December 4, 2021
-        </h2>
-        <h1 className={styles.leftTitle}>GOOD VIBES ONLY</h1>
-        <p className={styles.description}>
-          Mystic Sisterhood is a community full of good energy where creatives
-          can support each other.
-        </p>
-        <p className={styles.description}>
-          We welcome all enlightened beings. Whether you are drawn to magical
-          things, or just like the art, there is something here for everyone!
-        </p>
 
+        <Fader />
+
+        <FadeIn className={styles.noteContainer} transitionDuration={1000}>
+          <h1 className={styles.leftTitle}>GOOD VIBES ONLY</h1>
+          <p className={styles.description}>
+            Mystic Sisterhood is a community full of good energy where creatives
+            can support each other.
+          </p>
+          <p className={styles.description}>
+            We welcome all enlightened beings. Whether you are drawn to magical
+            things, or just like the art, there is something here for everyone!
+          </p>
+        </FadeIn>
         <hr
           className={`${styles.hr} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}
         />
-
-        <h1 className={styles.noteTitle}>Note from Lisa</h1>
-        <p className={styles.lisaNote}>
-          {`Hi my name is Lisa, thanks for coming by to check out the Mystic
+        <FadeIn
+          className={styles.noteContainer}
+          transitionDuration={800}
+          delay={1200}
+        >
+          <h1 className={styles.noteTitle}>Note from Lisa</h1>
+          <p className={styles.lisaNote}>
+            {`Hi my name is Lisa, thanks for coming by to check out the Mystic
           Sisterhood. Here's a little about me and the project: I am a Fine Art
           graduate from Ireland now living in Toronto. Women have been the
           forefront of my work for a long time now and this has evolved over the
@@ -58,7 +69,8 @@ export default function Home() {
           people. The nft art world is very new to me, but I am excited to be a
           part of it and use this project to give back to the art community and
           look at ways to support other artists along the way.`}
-        </p>
+          </p>
+        </FadeIn>
       </main>
       <footer className={styles.footer}>
         <a
