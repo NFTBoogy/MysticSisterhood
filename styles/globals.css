@@ -4,6 +4,17 @@
     url(../public/fonts/UnicornCalligraphy-oK7B.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Adelle";
+  src: local("Adelle"), url(../public/fonts/Adelle_Reg.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirHand";
+  src: local("AvenirHand"),
+    url(../public/fonts/AvenirCondensedHand.ttf) format("truetype");
+}
+
 html,
 body {
   padding: 0;

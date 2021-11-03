@@ -12,10 +12,15 @@
   align-items: center;
 }
 
+.subtitle {
+  margin-top: 0;
+  font-family: AvenirHand;
+}
+
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  padding: 1rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
@@ -40,25 +45,28 @@
   line-height: 1.45;
   font-size: 3rem;
   text-align: center;
-  width: 80%;
   background: -webkit-linear-gradient(#a3a3a3, #fff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: white;
+  font-family: Adelle;
 }
 
 .subtitle,
 .noteTitle {
   color: rgba(255, 255, 255, 0.75);
+  width: 80%;
+  text-align: center;
 }
 
 .description {
   margin: 0.5rem 0;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: left;
   color: #fff;
+  font-family: AvenirHand;
 }
 
 .noteTitle {
@@ -72,15 +80,17 @@
   text-align: left;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 0.5rem;
+  font-family: Adelle;
 }
 
 .lisaNote {
   margin: 0.5rem 0;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: left;
   color: #fff;
-  font-family: cursive;
+  font-family: AvenirHand, cursive;
+  padding: 0.5rem;
 }
 
 .noteContainer {
@@ -93,8 +103,35 @@
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  width: 10rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.banner {
+  max-width: 40%;
+  margin-bottom: 2rem;
+  box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1150px) {
+  .banner {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .banner {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .banner {
+    max-width: 95%;
+  }
 }
 
 .hr {
@@ -125,13 +162,6 @@
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
 
 @keyframes fadeInUp {
