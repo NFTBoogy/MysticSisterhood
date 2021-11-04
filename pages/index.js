@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Fader from "../components/Fader";
+import Counter from "../components/Counter";
+import Bar from "../components/Bar";
 import FadeIn from "react-fade-in";
 
 export default function Home() {
@@ -38,17 +40,15 @@ export default function Home() {
         </h3>
 
         <Fader />
-        <hr
-          className={`${styles.hr} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}
-        />
+
+        <Counter />
+        <Bar />
         <img
           src="/images/banner.jpg"
           alt="Mystic Sisters Banner"
           className={styles.banner}
         />
-        <hr
-          className={`${styles.hr} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}
-        />
+        <Bar />
 
         <FadeIn className={styles.noteContainer} transitionDuration={1000}>
           <h1 className={styles.leftTitle}>GOOD VIBES ONLY</h1>
@@ -61,9 +61,7 @@ export default function Home() {
             things, or just like the art, there is something here for everyone!
           </p>
         </FadeIn>
-        <hr
-          className={`${styles.hr} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}
-        />
+        <Bar />
         <FadeIn
           className={styles.noteContainer}
           transitionDuration={800}
@@ -93,6 +91,7 @@ export default function Home() {
             height={168}
           />
         </FadeIn>
+        <Bar />
       </main>
       <footer className={styles.footer}>
         <span className={styles.footerLogo}>
