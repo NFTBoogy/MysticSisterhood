@@ -5,6 +5,7 @@ import Fader from "../components/Fader";
 import Counter from "../components/Counter";
 import Bar from "../components/Bar";
 import FadeIn from "react-fade-in";
+import data from "../public/data/about";
 
 export default function Home() {
   return (
@@ -92,6 +93,29 @@ export default function Home() {
           />
         </FadeIn>
         <Bar />
+        <h1 className={styles.aboutTitle}>ABOUT US</h1>
+        <div className={styles.aboutContainer}>
+          {data.map((person, key) => (
+            <div key={key} className={styles.card}>
+              <img
+                src={person.imageURL}
+                alt={`${person.name}'s image`}
+                className={styles.aboutImage}
+              />
+              <p className={styles.cardText}>{person.name}</p>
+              <a
+                className={`${styles.cardText} ${styles.aboutText}`}
+                href={`https://twitter.com/${person.twitter}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {person.twitter}
+              </a>
+            </div>
+          ))}
+        </div>
+        <Bar />
+        <h1 className={styles.aboutTitle}>ROADMAP</h1>
       </main>
       <footer className={styles.footer}>
         <span className={styles.footerLogo}>

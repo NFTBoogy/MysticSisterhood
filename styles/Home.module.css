@@ -16,6 +16,7 @@
   margin-top: 0;
   font-family: AvenirHand;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .footer {
@@ -89,7 +90,7 @@
 }
 
 .noteContainer {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   padding: 10px;
   width: 75%;
@@ -99,9 +100,6 @@
 
 .logo {
   margin-top: 2rem;
-}
-
-.footerLogo {
 }
 
 .logo,
@@ -118,9 +116,92 @@
   box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.1);
 }
 
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 93%;
+}
+
+.aboutImage {
+  width: 10rem;
+  border-radius: 10px;
+  float: left;
+  margin-right: 2rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 40%;
+}
+
+.cardText {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #fff;
+  font-family: AvenirHand, cursive;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.aboutText:hover {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.aboutText {
+  padding-left: 0 !important;
+}
+
+.aboutTitle {
+  width: 75%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.5rem;
+  font-family: Adelle;
+}
+
 @media screen and (max-width: 1150px) {
   .banner {
     max-width: 60%;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .cardText {
+    font-size: 1.2rem;
+  }
+
+  .aboutTitle {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .card {
+    width: 93%;
+  }
+  .cardText {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .card {
+    width: 100%;
+  }
+  .cardText {
+    font-size: 1.2rem;
+  }
+
+  .aboutImage {
+    width: 6.5rem;
   }
 }
 
@@ -129,12 +210,26 @@
     max-width: 75%;
   }
 
+  .aboutContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0px 0px !important;
+  }
+
+  .card {
+    width: 93%;
+  }
+
   .noteContainer {
     width: 95%;
   }
 
   .hr {
     width: 80% !important;
+  }
+
+  .aboutTitle {
+    width: 93%;
   }
 }
 
@@ -146,6 +241,10 @@
   .noteContainer {
     background-color: initial;
     width: 100%;
+  }
+
+  .aboutContainer {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 
