@@ -144,14 +144,34 @@ export default function Home() {
         ))}
       </main>
       <footer className={styles.footer}>
-        <span className={styles.footerLogo}>
-          <Image
-            src="/images/mystic sisterhood logo color.png"
-            alt="Vercel Logo"
-            width={800}
-            height={500}
-          />
-        </span>
+        <div className={styles.footerLogo}>
+          <a
+            className={styles.footerIcon}
+            href="https://twitter.com/MysticSisNFT"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="/images/twitter-64.png"
+              alt="twitter"
+              height={64}
+              width={64}
+            />
+          </a>
+          <a
+            className={styles.footerIcon}
+            href="https://discord.gg/RrKU6zjetw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="/images/discord-64.png"
+              alt="discord"
+              height={64}
+              width={64}
+            />
+          </a>
+        </div>
       </footer>
     </div>
   );

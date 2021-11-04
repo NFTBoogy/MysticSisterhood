@@ -100,14 +100,19 @@
 
 .logo {
   margin-top: 2rem;
-}
-
-.logo,
-.footerLogo {
   width: 18rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footerLogo {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footerIcon {
+  margin: 1rem;
 }
 
 .banner {
