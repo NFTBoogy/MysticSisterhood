@@ -15,6 +15,7 @@
 .subtitle {
   margin-top: 0;
   font-family: AvenirHand;
+  font-size: 2rem;
 }
 
 .footer {
@@ -24,13 +25,6 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }
 
 .centerText {
@@ -61,16 +55,27 @@
 }
 
 .description {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.lisaNote {
+  padding: 0.5rem;
+}
+
+.description,
+.lisaNote {
   margin: 0.5rem 0;
   line-height: 1.5;
   font-size: 1.8rem;
   text-align: left;
   color: #fff;
-  font-family: AvenirHand;
+  font-family: AvenirHand, cursive;
+  font-weight: bold;
 }
 
 .noteTitle {
-  text-align: left !important;
+  text-align: left;
   font-family: UnicornCalligraphy, cursive;
   width: 75%;
 }
@@ -83,16 +88,6 @@
   font-family: Adelle;
 }
 
-.lisaNote {
-  margin: 0.5rem 0;
-  line-height: 1.5;
-  font-size: 1.8rem;
-  text-align: left;
-  color: #fff;
-  font-family: AvenirHand, cursive;
-  padding: 0.5rem;
-}
-
 .noteContainer {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 10px;
@@ -103,11 +98,18 @@
 }
 
 .logo {
-  width: 10rem;
+  margin-top: 2rem;
+}
+
+.footerLogo {
+}
+
+.logo,
+.footerLogo {
+  width: 18rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
 }
 
 .banner {
@@ -126,11 +128,24 @@
   .banner {
     max-width: 75%;
   }
+
+  .noteContainer {
+    width: 95%;
+  }
+
+  .hr {
+    width: 80% !important;
+  }
 }
 
 @media screen and (max-width: 580px) {
   .banner {
     max-width: 95%;
+  }
+
+  .noteContainer {
+    background-color: initial;
+    width: 100%;
   }
 }
 

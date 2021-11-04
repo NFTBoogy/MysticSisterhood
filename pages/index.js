@@ -81,15 +81,21 @@ export default function Home() {
           that I incorporate this into my work and acknowledge my heritage. I
           love a good story behind anything I do, so I guess this is part of
           mine. This collection is an exciting way for me to bring my art and
-          ideas into the nft art world and hopefully share them with lots of
-          people. The nft art world is very new to me, but I am excited to be a
+          ideas into the NFT art world and hopefully share them with lots of
+          people. The NFT art world is very new to me, but I am excited to be a
           part of it and use this project to give back to the art community and
           look at ways to support other artists along the way.`}
           </p>
+          <Image
+            src="/images/Signature.png"
+            alt="signature"
+            width={300}
+            height={168}
+          />
         </FadeIn>
       </main>
       <footer className={styles.footer}>
-        <span className={styles.logo}>
+        <span className={styles.footerLogo}>
           <Image
             src="/images/mystic sisterhood logo color.png"
             alt="Vercel Logo"
