@@ -8,6 +8,26 @@ import FadeIn from "react-fade-in";
 import data from "../public/data/about";
 
 export default function Home() {
+  const items = [
+    {
+      percent: "10%",
+      text: "Discord AMA with our artist and founder, Lisa Manton and team",
+    },
+    {
+      percent: "25%",
+      text: "7 Mystic Sisters released and delivered at random to wallets already containing at least one Mystic Sister",
+    },
+    {
+      percent: "50%",
+      text: "Original 1/1 piece by artist Lisa Manton airdropped into one Mystic Sisterhood holder’s wallet",
+    },
+    { percent: "75%", text: "Donation to charity" },
+    {
+      percent: "100%",
+      text: "Start Mystic Sisterhood Arts Program to help support and sponsor budding artists and artistic programs",
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -116,6 +136,12 @@ export default function Home() {
         </div>
         <Bar />
         <h1 className={styles.aboutTitle}>ROADMAP</h1>
+        {items.map((item, key) => (
+          <p key={key} className={styles.roadmapText}>
+            <span className={styles.percent}>{item.percent}</span>
+            {item.text}
+          </p>
+        ))}
       </main>
       <footer className={styles.footer}>
         <span className={styles.footerLogo}>
