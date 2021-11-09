@@ -14,6 +14,9 @@
     "react-countdown": "^2.3.2",
     "react-dom": "17.0.2",
     "react-fade-in": "^2.0.1",
+    "react-resize-aware": "^3.1.1",
+    "react-spring": "^9.3.0",
+    "styled-components": "^5.3.3",
     "tailwindcss": "^2.2.19",
     "xtendui": "^1.0.0-beta.47"
   },

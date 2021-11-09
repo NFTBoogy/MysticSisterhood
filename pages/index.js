@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Fader from "../components/Fader";
 import Counter from "../components/Counter";
 import Bar from "../components/Bar";
+import FaqsList from "../components/FaqsList";
 import FadeIn from "react-fade-in";
 import data from "../public/data/about";
 
@@ -142,6 +144,9 @@ export default function Home() {
             {item.text}
           </p>
         ))}
+        <Bar />
+        <h1 className={styles.aboutTitle}>FAQ</h1>
+        <FaqsList />
       </main>
       <footer className={styles.footer}>
         <div className={styles.footerLogo}>
@@ -173,6 +178,9 @@ export default function Home() {
           </a>
         </div>
       </footer>
+      <div className={styles.termsLink}>
+        <Link href="/terms">{`Terms & Conditions`}</Link>
+      </div>
     </div>
   );
 }
