@@ -185,7 +185,6 @@
 }
 
 .roadmapText {
-  width: 75%;
   font-family: AvenirHand;
   color: #fff;
   font-weight: bold;
@@ -194,6 +193,69 @@
   padding-right: 0.5rem;
   margin-bottom: 0;
   margin-top: 0.8rem;
+}
+
+.roadmapTextContainer {
+  flex-basis: 60%;
+}
+
+.roadmapContainer {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.roadmapImage {
+  margin-top: 4rem;
+  margin-left: 10rem;
+}
+
+@media screen and (max-width: 2270px) {
+  .roadmapTextContainer {
+    flex-basis: 60%;
+    padding-right: 20px;
+  }
+
+  .roadmapImage {
+    margin-left: 0;
+    padding-left: 60px;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .roadmapImage img {
+    width: 450px;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .roadmapContainer {
+    display: initial;
+    width: 100%;
+  }
+
+  .roadmapText {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .roadmapImage {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: initial;
+    width: 100%;
+    text-align: center;
+  }
+
+  .roadmapImage img {
+    width: 600px;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -221,19 +283,6 @@
   }
   .cardText {
     font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 475px) {
-  .card {
-    width: 100%;
-  }
-  .cardText {
-    font-size: 1.2rem;
-  }
-
-  .aboutImage {
-    width: 6.5rem;
   }
 }
 
@@ -266,7 +315,17 @@
   }
 }
 
+@media screen and (max-width: 655px) {
+  .roadmapImage img {
+    width: 500px;
+  }
+}
+
 @media screen and (max-width: 580px) {
+  .roadmapImage img {
+    width: 400px;
+  }
+
   .banner {
     max-width: 95%;
   }
@@ -282,6 +341,29 @@
 
   .aboutContainer {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .roadmapImage img {
+    width: 350px;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .cardText {
+    font-size: 1.2rem;
+  }
+
+  .aboutImage {
+    width: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .roadmapImage img {
+    width: 250px;
   }
 }
 
@@ -369,4 +451,8 @@
 
 .termsLink a:hover {
   color: rgb(255, 255, 255, 0.65);
+}
+
+.slides {
+  box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.1);
 }

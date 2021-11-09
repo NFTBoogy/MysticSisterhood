@@ -23,7 +23,7 @@ export default function Home() {
       percent: "50%",
       text: "Original 1/1 piece by artist Lisa Manton airdropped into one Mystic Sisterhood holder’s wallet",
     },
-    { percent: "75%", text: "Donation to charity" },
+    { percent: "75%", text: "Donation to charity (community voted)" },
     {
       percent: "100%",
       text: "Start Mystic Sisterhood Arts Program to help support and sponsor budding artists and artistic programs",
@@ -138,12 +138,24 @@ export default function Home() {
         </div>
         <Bar />
         <h1 className={styles.aboutTitle}>ROADMAP</h1>
-        {items.map((item, key) => (
-          <p key={key} className={styles.roadmapText}>
-            <span className={styles.percent}>{item.percent}</span>
-            {item.text}
-          </p>
-        ))}
+        <div className={styles.roadmapContainer}>
+          <div className={styles.roadmapTextContainer}>
+            {items.map((item, key) => (
+              <p key={key} className={styles.roadmapText}>
+                <span className={styles.percent}>{item.percent}</span>
+                {item.text}
+              </p>
+            ))}
+          </div>
+          <div className={styles.roadmapImage}>
+            <img
+              className={styles.slides}
+              src="/images/slides.gif"
+              alt="slides of mystic sisters"
+              width={500}
+            />
+          </div>
+        </div>
         <Bar />
         <h1 className={styles.aboutTitle}>FAQ</h1>
         <FaqsList />
