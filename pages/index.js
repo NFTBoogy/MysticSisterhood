@@ -75,14 +75,19 @@ export default function Home() {
 
         <FadeIn className={styles.noteContainer} transitionDuration={1000}>
           <h1 className={styles.leftTitle}>
-            <img src="/images/pestle.png" alt="mortar and pestle" width={50} />{" "}
+            <img
+              src="/images/pestle.png"
+              alt="mortar and pestle"
+              width={50}
+              style={{ verticalAlign: "middle", marginBottom: "0.75em" }}
+            />{" "}
             <span>GOOD VIBES ONLY</span>
           </h1>
           <div className={styles.vibesContainer}>
             <div className={styles.vibesImage}>
               <img
                 className={styles.slides}
-                src="/images/Lady.jpeg"
+                src="/images/Lady.jpg"
                 alt="A Mystic Sister"
                 width={500}
               />
@@ -111,6 +116,7 @@ export default function Home() {
               src="/images/Purple journal.png"
               alt="purple journal"
               width={50}
+              style={{ verticalAlign: "middle", marginBottom: "0.75em" }}
             />{" "}
             Note from Lisa
           </h1>
@@ -159,7 +165,13 @@ export default function Home() {
         </FadeIn>
         <Bar />
         <h1 className={styles.aboutTitle}>
-          <img src="/images/ball.png" alt="crystal ball" width={50} /> ABOUT US
+          <img
+            src="/images/ball.png"
+            alt="crystal ball"
+            width={50}
+            style={{ verticalAlign: "middle", marginBottom: "0.75em" }}
+          />{" "}
+          ABOUT US
         </h1>
         <div className={styles.aboutContainer}>
           {data.map((person, key) => (
@@ -183,7 +195,13 @@ export default function Home() {
         </div>
         <Bar />
         <h1 className={styles.aboutTitle}>
-          <img src="/images/candles.png" alt="candles" width={50} /> ROADMAP
+          <img
+            src="/images/candles.png"
+            alt="candles"
+            width={50}
+            style={{ verticalAlign: "middle", marginBottom: "0.75em" }}
+          />{" "}
+          ROADMAP
         </h1>
         <div className={styles.roadmapContainer}>
           <div className={styles.roadmapTextContainer}>
