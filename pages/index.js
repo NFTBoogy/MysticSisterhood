@@ -222,7 +222,15 @@ export default function Home() {
           </div>
         </div>
         <Bar />
-        <h1 className={styles.aboutTitle}>FAQ</h1>
+        <h1 className={styles.aboutTitle}>
+          <img
+            src="/images/apothecary.png"
+            alt="bottles from the apothecary"
+            width={50}
+            style={{ verticalAlign: "middle", marginBottom: "0.75em" }}
+          />{" "}
+          FAQ
+        </h1>
         <FaqsList />
       </main>
       <footer className={styles.footer}>
