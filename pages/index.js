@@ -82,8 +82,8 @@ export default function Home() {
             <div className={styles.vibesImage}>
               <img
                 className={styles.slides}
-                src="/images/lady.jpg"
-                alt="Lisa the artist"
+                src="/images/Lady.jpeg"
+                alt="A Mystic Sister"
                 width={500}
               />
             </div>
