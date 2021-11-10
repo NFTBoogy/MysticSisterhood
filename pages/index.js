@@ -74,15 +74,31 @@ export default function Home() {
         <Bar />
 
         <FadeIn className={styles.noteContainer} transitionDuration={1000}>
-          <h1 className={styles.leftTitle}>GOOD VIBES ONLY</h1>
-          <p className={styles.description}>
-            Mystic Sisterhood is a community full of good energy where creatives
-            can support each other.
-          </p>
-          <p className={styles.description}>
-            We welcome all enlightened beings. Whether you are drawn to magical
-            things, or just like the art, there is something here for everyone!
-          </p>
+          <h1 className={styles.leftTitle}>
+            <img src="/images/pestle.png" alt="mortar and pestle" width={50} />{" "}
+            <span>GOOD VIBES ONLY</span>
+          </h1>
+          <div className={styles.vibesContainer}>
+            <div className={styles.vibesImage}>
+              <img
+                className={styles.slides}
+                src="/images/lady.jpg"
+                alt="Lisa the artist"
+                width={500}
+              />
+            </div>
+            <div className={styles.vibesTextContainer}>
+              <p className={styles.description}>
+                Mystic Sisterhood is a community full of good energy where
+                creatives can support each other.
+              </p>
+              <p className={styles.description}>
+                We welcome all enlightened beings. Whether you are drawn to
+                magical things, or just like the art, there is something here
+                for everyone!
+              </p>
+            </div>
+          </div>
         </FadeIn>
         <Bar />
         <FadeIn
@@ -90,23 +106,50 @@ export default function Home() {
           transitionDuration={800}
           delay={1200}
         >
-          <h1 className={styles.noteTitle}>Note from Lisa</h1>
-          <p className={styles.lisaNote}>
-            {`Hi my name is Lisa, thanks for coming by to check out the Mystic
-          Sisterhood. Here's a little about me and the project: I am a Fine Art
-          graduate from Ireland now living in Toronto. Women have been the
-          forefront of my work for a long time now and this has evolved over the
-          years from hand drawn illustrations to digital illustrations. Given
-          that Ireland is flooded with all things magical & mystical (there’s so
-          much magic pouring out of every part of the island) it is only fitting
-          that I incorporate this into my work and acknowledge my heritage. I
-          love a good story behind anything I do, so I guess this is part of
-          mine. This collection is an exciting way for me to bring my art and
-          ideas into the NFT art world and hopefully share them with lots of
-          people. The NFT art world is very new to me, but I am excited to be a
-          part of it and use this project to give back to the art community and
-          look at ways to support other artists along the way.`}
-          </p>
+          <h1 className={styles.noteTitle}>
+            <img
+              src="/images/Purple journal.png"
+              alt="purple journal"
+              width={50}
+            />{" "}
+            Note from Lisa
+          </h1>
+          <div className={styles.letterContainer}>
+            <div className={styles.letterTextContainer}>
+              <p className={styles.lisaNote}>
+                Hi my name is Lisa, thanks for coming by to check out the Mystic
+                Sisterhood.
+              </p>
+              <p className={styles.lisaNote}>
+                I am a Fine Art graduate from Ireland now living in Toronto.
+                Women have always been at the forefront of my work and this
+                project is no different.
+              </p>
+              <p className={styles.lisaNote}>
+                Throughout my life I have had an amazing support network of
+                women -- both family and friends -- all of whom I consider in
+                some way, shape, or form to be intuitive, spiritual and of a
+                mystic nature. It is that common trait that has bonded us. This
+                collection is an ode to those women and any other woman who has
+                been there for another, whilst also paying homage to my Irish
+                heritage.
+              </p>
+              <p className={styles.lisaNote}>
+                The NFT art world is very new to me, but I am excited to be a
+                part of it and use this project to give back to the art
+                community and look at ways to support other artists along the
+                way.
+              </p>
+            </div>
+            <div className={styles.letterImage}>
+              <img
+                className={styles.slides}
+                src="/images/lisa.jpeg"
+                alt="Lisa the artist"
+                width={500}
+              />
+            </div>
+          </div>
           <Image
             src="/images/Signature.png"
             alt="signature"
@@ -115,7 +158,9 @@ export default function Home() {
           />
         </FadeIn>
         <Bar />
-        <h1 className={styles.aboutTitle}>ABOUT US</h1>
+        <h1 className={styles.aboutTitle}>
+          <img src="/images/ball.png" alt="crystal ball" width={50} /> ABOUT US
+        </h1>
         <div className={styles.aboutContainer}>
           {data.map((person, key) => (
             <div key={key} className={styles.card}>
@@ -137,7 +182,9 @@ export default function Home() {
           ))}
         </div>
         <Bar />
-        <h1 className={styles.aboutTitle}>ROADMAP</h1>
+        <h1 className={styles.aboutTitle}>
+          <img src="/images/candles.png" alt="candles" width={50} /> ROADMAP
+        </h1>
         <div className={styles.roadmapContainer}>
           <div className={styles.roadmapTextContainer}>
             {items.map((item, key) => (
