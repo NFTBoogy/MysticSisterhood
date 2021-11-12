@@ -41,6 +41,12 @@ const data = [
     twitter: "@GuyettAaron",
     imageURL: "/images/team/kc.jpg",
   },
+  {
+    id: 8,
+    name: "Cody",
+    twitter: "@CodyWUrban",
+    imageURL: "/images/team/cody.jpg",
+  },
 ];
 
 export default data;
