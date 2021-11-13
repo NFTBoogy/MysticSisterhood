@@ -39,7 +39,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 const Counter = (props) => {
-  return <Countdown date={"2021-12-04T19:43:00"} renderer={renderer} />;
+  return <Countdown date={"2022-01-17T05:51:00"} renderer={renderer} />;
 };
 
 export default Counter;

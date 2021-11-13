@@ -29,7 +29,7 @@ const Fader = ({ text }) => {
 };
 
 Fader.defaultProps = {
-  text: "Join us during the New Moon: December 4, 2021",
+  text: "Join us during the New Moon: January 17, 2022",
 };
 
 Fader.propTypes = {
