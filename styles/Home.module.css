@@ -250,6 +250,18 @@
   width: 350px;
 }
 
+.list,
+.listItem {
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.listHeader {
+  margin-bottom: 1.5rem;
+}
+
 @media screen and (max-width: 2270px) {
   .roadmapTextContainer {
     flex-basis: 60%;

@@ -9,24 +9,36 @@ import FaqsList from "../components/FaqsList";
 import FadeIn from "react-fade-in";
 import data from "../public/data/about";
 
+const lineBreak = <br />;
+
 export default function Home() {
   const items = [
     {
       percent: "10%",
-      text: "Discord AMA with our artist and founder, Lisa Manton and team",
+      text: ["Discord AMA with our artist and founder, Lisa Manton and team"],
     },
     {
       percent: "25%",
-      text: "7 Mystic Sisters released and delivered at random to wallets already containing at least one Mystic Sister",
+      text: [
+        "7 Mystic Sisters released and delivered at random to wallets already containing at least one Mystic Sister",
+      ],
     },
     {
       percent: "50%",
-      text: "Original 1/1 piece by artist Lisa Manton airdropped into one Mystic Sisterhood holder’s wallet",
+      text: [
+        "Original 1/1 piece by artist Lisa Manton airdropped into one Mystic Sisterhood holder’s wallet",
+      ],
     },
-    { percent: "75%", text: "Donation to charity (community voted)" },
+    { percent: "75%", text: ["5 ETH Donation to charity (community voted)"] },
     {
       percent: "100%",
-      text: "Start Mystic Sisterhood Arts Program to help support and sponsor budding artists and artistic programs",
+      text: [
+        "Start Mystic Sisterhood Creative Hub which includes:",
+        "Mystic Sisterhood Fund used to give back and invest in the community",
+        "Mentorship Program to help support new creatives in the NFT space",
+        "Arts Collective which will provide resources for individuals such as video tutorials, art therapy resources, business advice, aid for creative block, and more",
+        "Gallery to promote and highlight artists",
+      ],
     },
   ];
 
@@ -206,10 +218,23 @@ export default function Home() {
         <div className={styles.roadmapContainer}>
           <div className={styles.roadmapTextContainer}>
             {items.map((item, key) => (
-              <p key={key} className={styles.roadmapText}>
+              <div key={key} className={styles.roadmapText}>
                 <span className={styles.percent}>{item.percent}</span>
-                {item.text}
-              </p>
+                {item.text.length > 1 ? (
+                  <>
+                    <div className={styles.listHeader}>{item.text[0]}</div>
+                    <ul className={styles.list}>
+                      {item.text.slice(1).map((text, idx) => (
+                        <li key={idx} className={styles.listItem}>
+                          {text}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  item.text[0]
+                )}
+              </div>
             ))}
           </div>
           <div className={styles.roadmapImage}>
