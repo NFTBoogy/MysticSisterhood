@@ -99,7 +99,7 @@ export default function Home() {
             <div className={styles.vibesImage}>
               <img
                 className={styles.slides}
-                src="/images/Lady.jpg"
+                src="/images/Lady.JPG"
                 alt="A Mystic Sister"
                 width={500}
               />
