@@ -36,7 +36,7 @@ export default function Home() {
         "Start Mystic Sisterhood Creative Hub which includes:",
         "Mystic Sisterhood Fund used to give back and invest in the community",
         "Mentorship Program to help support new creatives in the NFT space",
-        "Arts Collective which will provide resources for individuals such as video tutorials, art therapy resources, business advice, aid for creative block, and more",
+        "The Collective, which will provide resources for individuals such as video tutorials, art therapy resources, business advice, aid for creative block, and more",
         "Gallery to promote and highlight artists",
       ],
     },
